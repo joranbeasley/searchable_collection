@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to SearchableCollection's documentation!
-=======================================
+================================================
 
 I wrote SearchableCollections in order to provide an ORM like interface to regular lists
 
@@ -33,7 +33,6 @@ API Reference
 .. toctree::
    :maxdepth: 2
 
-   searchable_collection.SearchableCollection
 
 
 
@@ -49,7 +48,8 @@ Examples
 .. toctree::
    :maxdepth: 1
 
-   examples
+   Introduction
+   search_api
 
 Indices and tables
 ------------------

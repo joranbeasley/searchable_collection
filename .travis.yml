@@ -1,6 +1,6 @@
 language: python
 
-before_install:
+install:
   - sudo pip install pyserial pytest coverage python-coveralls pytest-cov
 
 script:

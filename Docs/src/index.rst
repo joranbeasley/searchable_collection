@@ -21,8 +21,8 @@ Installation
 
 | :code:`setup.py install`
 | or :code:`pip install .`
-| or install it from pipy with :code:`pip install serial_mock`
-| or directly from github :code:`pip install git+https://github.com/joranbeasley/SerialMock.git`
+| or install it from pipy with :code:`pip install searchable_collection`
+| or directly from github :code:`pip install git+https://github.com/joranbeasley/searchable_collection.git`
 
 
 

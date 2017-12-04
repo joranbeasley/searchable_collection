@@ -17,6 +17,8 @@ class SearchableCollection:
         :param index: the integer index of the Order to access
         :return: the order at the specified index
         """
+        if isinstance(index,slice):
+            return [i.target for i in self.items[index]]
         return self.items[index].target
 
     def __iter__(self):
@@ -24,7 +26,7 @@ class SearchableCollection:
         allow orders to be iterated over
         :return: an iterator of all the orders
         """
-        return (item.target for item in self.items)
+        return (item.target for item in self.items[:])
 
     def __len__(self):
         return len(self.items)
@@ -134,5 +136,4 @@ class SearchableCollection:
         return [item.to_dict() for item in self.items]
 
 
-if __name__ == "__main__":
-    pass
+

@@ -6,7 +6,7 @@ install:
   - pip freeze
   - sudo pip freeze
 script:
-  - pwd
+  - export PYTHONPATH=$(pwd)
   - pip freeze
   - which py.test
   - py.test ./tests -v --cov --cov-report=term-missing

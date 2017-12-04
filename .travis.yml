@@ -2,7 +2,7 @@ language: python
 
 install:
   - sudo pip install --upgrade setuptools
-  - sudo pip install coverage python-coveralls pytest-cov pytest pytest-pep8
+  - sudo pip install -r test_requirements.txt
 
 script:
   - pwd

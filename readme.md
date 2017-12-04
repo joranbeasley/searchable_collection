@@ -1,5 +1,7 @@
 searchable_collection
 ------------------------------
+[![Coverage Status](https://coveralls.io/repos/github/joranbeasley/searchable_collection/badge.svg?branch=master)](https://coveralls.io/github/joranbeasley/searchable_collection?branch=master)
+
 ## Overview
 
 This package attempts to provide an ORM like interface to searching lists

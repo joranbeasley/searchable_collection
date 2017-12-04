@@ -1,8 +1,8 @@
 language: python
 
 install:
-  - sudo pip install --upgrade setuptools
-  - sudo pip install -r test_requirements.txt
+  - pip install --upgrade setuptools
+  - pip install -r test_requirements.txt
   - pip freeze
   - sudo pip freeze
 script:

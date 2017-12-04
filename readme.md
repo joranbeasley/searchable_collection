@@ -3,6 +3,8 @@ searchable_collection
 [![Build Status](https://travis-ci.org/joranbeasley/searchable_collection.svg?branch=master)](https://travis-ci.org/joranbeasley/searchable_collection)
 [![Coverage Status](https://coveralls.io/repos/github/joranbeasley/searchable_collection/badge.svg?branch=master)](https://coveralls.io/github/joranbeasley/searchable_collection?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/870c467e59784d86bd598a5d5d928bbd)](https://www.codacy.com/app/joranbeasley/searchable_collection?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joranbeasley/searchable_collection&amp;utm_campaign=Badge_Grade)
+[![Documentation Status](https://readthedocs.org/projects/searchablecollection/badge/?version=latest)](http://searchablecollection.readthedocs.io/en/latest/?badge=latest)
+  
 
 ## Overview
 

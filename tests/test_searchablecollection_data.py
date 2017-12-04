@@ -26,9 +26,17 @@ class SimpleSearchExampleClass:
         return SimpleSearchExampleClass(**data)
 
 def test_create_simpleclass():
-    simple_class = SimpleSearchExampleClass.create("asd","dsa")
+    simple_class = SimpleSearchExampleClass.create("asd","dsa",1,15,100,[7,7,7],["a","b"],{"a":7})
     assert simple_class.string_field1 == "asd"
-    assert repr(simple_class) == "<s:{'subclass': None, 'list_field2': ['a', 'b'], 'list_field1': [1, 2], 'int_field3': -10, 'int_field2': -2, 'int_field1': 0, 'string_field2': 'dsa', 'string_field1': 'asd'}>"
+    assert simple_class.string_field2 == "dsa"
+    assert simple_class.int_field1 == 1
+    assert simple_class.int_field2 == 15
+    assert simple_class.int_field3 == 100
+    assert simple_class.list_field1 == [7,7,7]
+    assert simple_class.list_field2 == ['a','b']
+    assert simple_class.subclass == {"a":7}
+
+
     generated_class = SimpleSearchExampleClass.generate()
     assert generated_class.subclass is not None
     assert generated_class.subclass.subclass is None

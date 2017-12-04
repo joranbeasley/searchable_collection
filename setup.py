@@ -8,7 +8,8 @@ setup(
     license='MIT',
     author='Joran Beasley',
     author_email='joranbeasley@gmail.com',
-    description='https://github.com/joranbeasley/searchable_collection',
+    repo='https://github.com/joranbeasley/searchable_collection',
+    description='A searchable list implementation, written entirely in python.',
     classifiers=[
           'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',

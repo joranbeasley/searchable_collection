@@ -1,5 +1,5 @@
 from operator import eq
-from searchable_collection import SimpleComparator
+from searchable_collection.simple_comparator import SimpleComparator
 
 class SearchableItem:
     collection = None

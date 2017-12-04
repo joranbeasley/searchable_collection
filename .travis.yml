@@ -6,7 +6,7 @@ install:
 
 script:
   - pwd
-  - py.test ./tests -v --cov=coveralls --cov-report=term-missing
+  - py.test ./tests -v --cov --cov-report=term-missing
 
 after_success:
   - coveralls

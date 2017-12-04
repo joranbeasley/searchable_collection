@@ -66,3 +66,6 @@ class SearchableItem:
         elif end_part.startswith("not_") and end_part[4:] in SimpleComparator.comparator_dict:
             return SimpleComparator(result, end_part[4:], negate=True)
         return getattr(result, end_part, result)
+
+if __name__ == "__main__":
+    print("OK???")

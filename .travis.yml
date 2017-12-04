@@ -10,6 +10,7 @@ script:
   - ls
   - pip freeze
   - which py.test
+  - python ./searchable_collection/searchable_item.py
   - py.test ./tests -v --cov --cov-report=term-missing
 
 after_success:

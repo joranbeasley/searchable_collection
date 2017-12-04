@@ -3,14 +3,8 @@ language: python
 install:
   - pip install --upgrade setuptools
   - pip install -r test_requirements.txt
-  - pip freeze
-  - sudo pip freeze
 script:
   - export PYTHONPATH=$(pwd)
-  - ls
-  - pip freeze
-  - which py.test
-  - python ./searchable_collection/searchable_item.py
   - py.test ./tests -v --cov --cov-report=term-missing
 
 after_success:

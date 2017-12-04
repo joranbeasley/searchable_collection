@@ -109,6 +109,50 @@ the format that we need to use for this is
     # lets find all the items that have x <= 5 && y != 97
     items_lte_5 = my_list.find_all_where(x_lte=5,y_not_eq=97)
 
+Multi Level Nested Attribute Search
+___________________________________
+
+now imagine we had some objects like the following
+
+.. code-block:: python
+
+   class TestClass():
+        def __init__(self,a,b,c,d):
+            self.a=a
+            self.b_list = {"b":b,"c":{"val":c,"next":d}}
+        def __repr__(self):
+            return str(self)
+        def __str__(self):
+            return "<TC="+str([self.a,[self.b_list['b'],[self.b_list['c']['val'],self.b_list['c']['next']]])+">"
+
+   objects = SearchableCollection([ TestClass(*range(4)),
+                TestClass(*range(1,5)),
+                TestClass(*range(3,8)),
+                TestClass(*range(6,11))
+              ])
+   print(objects[0])
+
+now we can actually dive in and access sub-attibutes of our class
+
+.. code-block:: python
+
+   objects.find_all_where(contains="a") # zero level search (just a modifier)
+
+   objects.find_all_where(a=3) # single level search
+   objects.find_all_where(a__in=[3,6]) # single level search with modifier
+
+   objects.find_all_where(a=3) # single level search
+   objects.find_all_where(a__in=[3,6]) # single level search with modifier
+
+   objects.find_all_where(b_list__b=3) # 2nd level search
+   objects.find_all_where(b_list__b__not_in=[3,5]) # 2nd level search with negated modifier
+
+   objects.find_all_where(b_list__c__val=4) # 3rd level search
+   objects.find_all_where(b_list__c__val__gt=7) # 3rd level search with negated modifier
+
+you can continue indefinately ... although i imagine the deeper you have to
+go the slower it will be, but it should be fine for smallish lists
+
 
 * :ref:`genindex`
 * :ref:`search`

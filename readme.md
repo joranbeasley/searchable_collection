@@ -25,7 +25,7 @@ This package attempts to provide an ORM like interface to searching lists
 
     pip install searchable_collection
     # or
-    pip install git+ssh://<gitrepo>
+    pip install git+ssh://github.com/joranbeasley/searchable_collection.git
     # or
     # Download Project and 
     python setup.py install

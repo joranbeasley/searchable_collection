@@ -1,7 +1,7 @@
 language: python
 
 install:
-  - sudo pip install coverage python-coveralls pytest-cov
+  - sudo pip install coverage python-coveralls pytest-cov pytest pytest-pep8
 
 script:
   - py.test tests --pep8 coveralls -v --cov coveralls --cov-report term-missing

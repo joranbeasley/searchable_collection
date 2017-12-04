@@ -1,7 +1,7 @@
 import random
 
 from test_searchablecollection_data import SimpleSearchExampleClass
-from searchable_collection.searchable_collection import SearchableCollection
+from searchable_collection import SearchableCollection
 
 
 def test_create_searchlist():

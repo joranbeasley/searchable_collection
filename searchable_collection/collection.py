@@ -1,4 +1,4 @@
-from searchable_collection.searchable_item import SearchableItem
+from searchable_collection.item import SearchableItem
 
 
 

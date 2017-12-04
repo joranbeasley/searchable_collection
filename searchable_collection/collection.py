@@ -5,9 +5,10 @@ from searchable_collection.item import SearchableItem
 
 
 class SearchableCollection:
-    def __init__(self, master=None):
+    def __init__(self,list_initial=[], master=None):
         self.master = master
         self.items = []
+        self.extend(list_initial)
 
     def __getitem__(self, index):
         """

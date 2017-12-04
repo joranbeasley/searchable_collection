@@ -7,6 +7,7 @@ searchable_collection
   
 
 ## Overview
+# [READ THE DOCS!!](http://searchablecollection.readthedocs.io/en/latest/)
 
 This package attempts to provide an ORM like interface to searching lists
 
@@ -38,7 +39,7 @@ This package attempts to provide an ORM like interface to searching lists
  
     pytest tests    
     
-# Check out tonnes of examples
+# Check out tonnes of examples in the docs!
 # [READ THE DOCS!!](http://searchablecollection.readthedocs.io/en/latest/)
  [![Documentation Status](https://readthedocs.org/projects/searchablecollection/badge/?version=latest)](http://searchablecollection.readthedocs.io/en/latest/?badge=latest)
   

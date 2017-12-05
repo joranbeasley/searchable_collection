@@ -6,7 +6,9 @@ SearchableCollection API Documentation
 Available Methods
 -----------------
 
-.. py:decoratormethod:: SearchableCollection.find_one_where(**query_conditions)
+.. _findallwhere:
+
+.. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
    :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
    :return: A single match from the collection (the *first* match found), *or None if no match is found*
@@ -17,8 +19,9 @@ Available Methods
 
       my_collection.find_one_where(sn="123123",in_use=False)
 
+.. _findonewhere:
 
-.. py:decoratormethod:: SearchableCollection.find_one_where(**query_conditions)
+.. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
    :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
    :return: all of the matches from the collection
@@ -33,7 +36,9 @@ Available Methods
 
 
 
-.. py:decoratormethod:: SearchableCollection.delete_where(**query_conditions)
+.. _deletewhere:
+
+.. py:classmethod:: SearchableCollection.delete_where(**query_conditions)
 
    :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
    :return: None

@@ -90,6 +90,8 @@ the format that we need to use for this is
     find_all_where(<attribute_name>__not_<modifier> = <value>)
 
 
+
+
 .. code-block:: python
     :linenos:
 

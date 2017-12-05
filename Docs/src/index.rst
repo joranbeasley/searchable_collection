@@ -47,6 +47,7 @@ Examples
    Introduction
    usage_guide
    api_docs
+   query_reference
 
 Indices and tables
 ------------------

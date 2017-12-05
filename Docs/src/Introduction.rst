@@ -92,7 +92,7 @@ the complete list of modifiers is as follows
 .. code-block:: text
 
     __contains   -  x in y    
-    __in         -  y in x # note that if this is the only part of the string it is replaced with is_in     
+    __in         -  y in x # note that if the field is ommited it is replaced with is_in `...where(is_in=...)`
     __startswith -  x.startswith(y)
     __endswith   -  x.endswith(y)
     __search     -  re.search(y,x)

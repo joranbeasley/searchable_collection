@@ -173,6 +173,30 @@ ___________________
    >>> entry_objects.find_all_where(cost__not_gte(9)) # x < 9
 
 
+Lookups Than Span Sub-Objects
+-----------------------------
+
+SearchableCollections offer a powerful and intuitive way to “follow” relationships in lookups,
+taking care of the search for you automatically, behind the scenes.
+To span a sub-object, just use the field name of sub-objects, separated by double underscores,
+until you get to the field you want.
+
+>>> entry_objects.filter(blog__name='Beatles Blog')
+
+this assumes you have an object with a field named "blog", blog has a field named "name"
+
+>>> entry = {"blog":{"name":...,"date":...,"author":{"name":...,"publications":[...]}}
+
+this will locate the entry that has a blog, with a name field of "Beatles Blog"
+
+This spanning can be as deep as you like
+
+>>> entry_objects.filter(blog__author__name='Lennon')
+
+
+
+
+
 
 * :ref:`genindex`
 * :ref:`search`

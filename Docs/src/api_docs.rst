@@ -21,7 +21,7 @@ Available Methods
 
 .. _findonewhere:
 
-.. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
+.. py:classmethod:: SearchableCollection.find_all_where(**query_conditions)
 
    :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query-lookuptype-reference>`
    :return: all of the matches from the collection

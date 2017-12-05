@@ -21,6 +21,10 @@ class SearchableCollection:
             return [i.target for i in self.items[index]]
         return self.items[index].target
 
+    def __setitem__(self, index, value):
+        self.items[index] = SearchableItem(value)
+        self._reindex()
+
     def __iter__(self):
         """
         allow orders to be iterated over

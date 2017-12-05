@@ -3,6 +3,17 @@
 SearchableCollection API Documentation
 ======================================
 
+In General SearchableCollection attempts to mimic the functionality of a list exactly
+
+that means you can do indexing like ``my_list[0], my_list[-1]``
+
+and you can also do slicing like ``my_list[5:15:3]``
+
+and you can do standard list setitems like ``my_list[6] = SomeClass()``
+
+you can also use the normal ``x in my_list`` operator
+
+
 .. seealso::
 
    :ref:`QUERY ARGUMENTS<query_reference>`

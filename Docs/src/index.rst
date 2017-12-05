@@ -35,18 +35,6 @@ Installation
 
 
 
-API Reference
--------------
-
-.. toctree::
-   :maxdepth: 2
-
-
-
-
-
-
-
 
 
 
@@ -57,7 +45,8 @@ Examples
    :maxdepth: 1
 
    Introduction
-   search_api
+   usage_guide
+   api_docs
 
 Indices and tables
 ------------------

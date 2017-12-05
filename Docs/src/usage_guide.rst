@@ -1,5 +1,5 @@
-SearchableList SearchAPI
-========================
+SearchableCollection Usage Guide
+================================
 
 Simple Access
 -------------
@@ -101,18 +101,18 @@ the format that we need to use for this is
     items_with_x5 = my_list.find_all_where(x=5)
 
     # lets find all the items that have x <= 5
-    items_lte_5 = my_list.find_all_where(x_lte=5)
+    items_lte_5 = my_list.find_all_where(x__lte=5)
 
     # lets find all the items that have x <= 5 && y > 97
-    items_lte_5 = my_list.find_all_where(x_lte=5,y_gt=97)
+    items_lte_5 = my_list.find_all_where(x__lte=5,y__gt=97)
 
     # lets find all the items that have x <= 5 && y != 97
-    items_lte_5 = my_list.find_all_where(x_lte=5,y_not_eq=97)
+    items_lte_5 = my_list.find_all_where(x__lte=5,y__not_eq=97)
 
 Multi Level Nested Attribute Search
 ___________________________________
 
-now imagine we had some objects like the following
+now imagine we had some objects like the following, and of coarse you can still use all the :ref:`Comparison Search Modifiers <comparison_modifiers>`
 
 .. code-block:: python
 

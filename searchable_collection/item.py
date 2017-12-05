@@ -14,15 +14,16 @@ class SearchableItem:
             self.target.collection = self.collection
             self.target.delete = lambda *a: SearchableItem.delete(self)
             self.target.item_index = self._item_index
-        except:
-            pass
+        except AttributeError:
+            return
+
 
     def set_item_index(self, val):
         self._item_index = val
         try:
             self.target.item_index = val
-        except:
-            pass
+        except AttributeError:
+            return
 
     def delete(self):
         self.collection.delete(self)
@@ -43,8 +44,7 @@ class SearchableItem:
             return SimpleComparator(self.target, item[4:],negate=True)
         try:
             rest, end_part = item.split("__", 1)
-        except:
-            # print("CANNOT SPLIT ITEM %r???" % item)
+        except ValueError:
             print("No Attribute %r on %r" % (item,self.target))
             return None
 
@@ -58,7 +58,7 @@ class SearchableItem:
                 result = getattr(target, rest)
             try:
                 rest, end_part = end_part.split("__", 1)
-            except:
+            except ValueError:
                 break
 
         if end_part in SimpleComparator.comparator_dict:

@@ -4,7 +4,7 @@ import requests
 from searchable_collection import SearchableCollection
 
 url="https://api.tronalddump.io/search/quote?query=banks"
-#lets see what the jerk has to say about banks
+#lets see what he has to say about banks
 data = requests.get(url).json().get("_embedded",{}).get('quotes',[])
 
 my_list = SearchableCollection(data)

@@ -1,3 +1,4 @@
+.. _query_reference:
 
 Query Reference
 ===============

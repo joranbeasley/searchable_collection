@@ -10,7 +10,7 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
+   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query-lookuptype-reference>`
    :return: A single match from the collection (the *first* match found), *or None if no match is found*
 
     search the collection and return the first item that matches our search criteria
@@ -23,7 +23,7 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
+   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query-lookuptype-reference>`
    :return: all of the matches from the collection
    :rtype: generator
 
@@ -40,7 +40,7 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.delete_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS`<>
+   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query-lookuptype-reference>`
    :return: None
 
    Deletes any items in the collection that match the given search criteria

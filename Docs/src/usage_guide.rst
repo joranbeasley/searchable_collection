@@ -40,6 +40,10 @@ this is really the whole purpose of this module, to provide a flexible ORM like 
 I doubt its super efficient, so i wouldnt recommend using it with huge lists, but it should be able to search
 a few hundred records near instantly
 
+.. seealso::
+
+   :ref:`query_reference`
+
 Single Nested Element Search
 ____________________________
 
@@ -155,6 +159,13 @@ now we can actually dive in and access sub-attibutes of our class
 you can continue indefinately ... although i imagine the deeper you have to
 go the slower it will be, but it should be fine for smallish lists
 
+.. seealso::
+
+   :ref:`query_reference`
+
+   :ref:`Lookups Than Span Sub-Objects<lookup_span>`
+
+   :py:meth:`SearchableCollection.find_all_where`
 
 * :ref:`genindex`
 * :ref:`search`

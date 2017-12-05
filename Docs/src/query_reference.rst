@@ -173,6 +173,7 @@ ___________________
    >>> entry_objects.find_all_where(rating__gte(9)) # x >= 9
    >>> entry_objects.find_all_where(cost__not_gte(9)) # x < 9
 
+.. _lookup_span:
 
 Lookups Than Span Sub-Objects
 -----------------------------

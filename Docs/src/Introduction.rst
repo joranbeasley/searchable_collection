@@ -82,7 +82,16 @@ it starts getting even more interesting with nested dictionaries
     
     # 3 in d['sub_dict']['alist']
     print(list(my_list.find_all_where(sub_dict__alist__contains=3))
-    
+
+
+.. seealso::
+
+   :ref:`query_reference`
+
+   :ref:`api_docs`
+
+
+
 What Modifiers Can I Use
 ------------------------
 the complete list of modifiers is as follows

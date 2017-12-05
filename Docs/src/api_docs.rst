@@ -1,7 +1,13 @@
+.. _api_docs:
+
 SearchableCollection API Documentation
 ======================================
 
+.. seealso::
 
+   :ref:`QUERY ARGUMENTS<query_reference>`
+
+   :ref:`Lookups CheatSheet<comparison_modifiers>`
 
 Available Methods
 -----------------
@@ -10,7 +16,8 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query_reference>`
+   :param query_conditions: keyword pairs that describe the current search criteria
+   :type query_conditions: SEE: :ref:`QUERY ARGUMENTS<query_reference>`
    :return: A single match from the collection (the *first* match found), *or None if no match is found*
 
     search the collection and return the first item that matches our search criteria
@@ -23,7 +30,8 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.find_all_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query_reference>`
+   :param query_conditions: keyword pairs that describe the current search criteria
+   :type query_conditions: SEE: :ref:`QUERY ARGUMENTS<query_reference>`
    :return: all of the matches from the collection
    :rtype: generator
 
@@ -40,7 +48,8 @@ Available Methods
 
 .. py:classmethod:: SearchableCollection.delete_where(**query_conditions)
 
-   :param dict query_conditions: keyword pairs that describe the current search criteria, SEE ALSO: :ref:`QUERY ARGUMENTS<query_reference>`
+   :param query_conditions: keyword pairs that describe the current search criteria
+   :type query_conditions: SEE: :ref:`QUERY ARGUMENTS<query_reference>`
    :return: None
 
    Deletes any items in the collection that match the given search criteria
@@ -48,3 +57,6 @@ Available Methods
    .. code-block:: python
 
       my_collection.delete_where(sn__startswith="AB") # delete all things that have a sn attribute starting with "AB"
+
+* :ref:`genindex`
+* :ref:`search`

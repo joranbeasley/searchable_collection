@@ -6,7 +6,7 @@ SearchableCollection API Documentation
 Available Methods
 -----------------
 
-.. _findallwhere:
+.. _findonewhere:
 
 .. py:classmethod:: SearchableCollection.find_one_where(**query_conditions)
 
@@ -19,7 +19,7 @@ Available Methods
 
       my_collection.find_one_where(sn="123123",in_use=False)
 
-.. _findonewhere:
+.. _findallwhere:
 
 .. py:classmethod:: SearchableCollection.find_all_where(**query_conditions)
 

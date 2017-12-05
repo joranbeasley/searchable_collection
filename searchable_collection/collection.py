@@ -22,7 +22,7 @@ class SearchableCollection:
         return self.items[index].target
 
     def __setitem__(self, index, value):
-        self.items[index] = SearchableItem(value)
+        self.items[index] = SearchableItem(value,self)
         self._reindex()
 
     def __iter__(self):

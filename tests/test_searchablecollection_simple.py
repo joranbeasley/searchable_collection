@@ -74,7 +74,12 @@ def test_to_dict():
     assert search_list.find_one_where(subclass__x__asd__status="ok") == search_list[-1]
     assert 5 in search_list.to_dicts()
 
-
+def test_setitem():
+    search_list = test_create_searchlist()
+    d = {'a':532,'b':"Hello"}
+    search_list[3] = d
+    assert d is search_list[3]
+    assert search_list.find_one_where(a=532,b="Hello") is d
 def test_searchlist_insert():
     search_list = test_create_searchlist()
     new_ssec = SimpleSearchExampleClass.generate()
